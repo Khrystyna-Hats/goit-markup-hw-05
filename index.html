@@ -52,7 +52,7 @@
         <section class="hero-section">
             <div class="container">
                 <h1 class="hero">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-btn btn" type="button">Заказать услугу</button>
+                <button class="hero-btn btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
         <!-- Секция Наше преимущество -->
@@ -106,12 +106,15 @@
                 <ul class="activity-list">
                     <li class="activity-item">
                         <img src="images/what-we-do-1.jpg" alt="Мужчина пишет код" width="370" height="294">
+                        <p class="activity-top-text">Десктопные приложения</p>
                     </li>
                     <li class="activity-item">
                         <img src="images/what-we-do-2.jpg" alt="Девушка держит телефон у ноутбука" width="370" height="294">
+                        <p class="activity-top-text">Мобильные приложения</p>
                     </li>
                     <li class="activity-item">
                         <img src="images/what-we-do-3.jpg" alt="Человек держит планшет в руках" width="370" height="294">
+                        <p class="activity-top-text">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -380,6 +383,15 @@
         </div>
         
     </footer>
-
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg  width="11" height="11">
+                    <use href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
